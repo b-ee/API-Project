@@ -1,0 +1,59 @@
+html body {
+  width: 1500px;
+  height: 100%;
+  max-width: 100%;
+  background-color: #8F857D;
+  padding: 3rem 1.5rem;
+  margin: 1rem;
+  align-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%; }
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+#wrapper {
+  padding: 1rem;
+}
+
+#topBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  float: bottom;
+}
+
+#topBar a {
+  text-align: end;
+}
+
+#images {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  background-color: #42312A;
+  padding: 0.6rem;
+  border: 0.1em ridge #313E50;
+  justify-content: center;
+}
+
+.pic {
+  margin: 1rem;
+  background-color: #AC9FBB;
+  padding: 1rem;
+  border: 0.2em inset #313E50;
+}
