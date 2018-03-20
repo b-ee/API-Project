@@ -1,13 +1,11 @@
-const emailForm = document.querySelector("form");
-const userEmail = document.querySelector(".userEmail");
+function addressSwitch() {
+  const email = document.getElementById("email");
+  const notes = document.getElementById("notes");
+  const newForm = document.getElementById("newForm");
 
-emailForm.addEventListener("submit",addressSwitch);
+  newForm.action = `https://formspree.io/${email}`;
 
-function addressSwitch(e) {
-  e.preventDefault();
-  console.log(userEmail.value);
+  newForm.appendChild(notes);
 
-  emailForm.action = `https://formspree.io/${userEmail.value}`
-
-  emailForm.open("POST",`https://formspree.io/${userEmail.value}`);
+  newForm.submit();
 }

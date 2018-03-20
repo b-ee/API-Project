@@ -72,16 +72,17 @@
             </div>
             <div class="control-group">
               <div class="form-group">
-                <textarea class="form-control" rows="7" placeholder="Your Brilliant Idea" id="message" required="" data-validation-required-message="Please leave a message"
+                <textarea class="form-control" rows="7" placeholder="Your Brilliant Idea" id="notes" required="" data-validation-required-message="No text entered!"
                   name="message"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="text-center">
               <div id="success"></div>
-              <button type="submit" class="imgBtn">SEND</button>
+              <button onclick="addressSwitch()" class="imgBtn">SEND</button>
             </div>
           </form>
+          <form id="newForm" action="" method="POST"></form>
         </div>
       </div>
     </section>
