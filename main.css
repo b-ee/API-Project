@@ -2,26 +2,17 @@ html body {
   width: 1500px;
   height: 100%;
   max-width: 100%;
-  background-color: #8F857D;
+  background-image: url("assets/randomPicBackground.png");
   padding: 3rem 1.5rem;
   margin: 1rem;
   align-content: center;
+  font-family: 'Bree Serif', serif;
+  color: #A9C5E5;
+  text-shadow: -1px 0 #212E3F, 0 1px #212E3F, 1px 0 #212E3F, 0 -1px #212E3F;
 }
 
 img {
   max-width: 100%;
-}
-
-/* Tablet Landscape */
-@media screen and (max-width: 1060px) {
-  #primary { width:67%; }
-  #secondary { width:30%; margin-left:3%; }
-}
-
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-  #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; }
 }
 
 #wrapper {
@@ -45,15 +36,48 @@ img {
   justify-items: center;
   align-items: center;
   width: 100%;
-  background-color: #42312A;
+  background-image: url("assets/imgBackground.png");
   padding: 0.6rem;
-  border: 0.1em ridge #313E50;
+  border: 0.1em ridge #212E3F;
   justify-content: center;
 }
 
 .pic {
   margin: 1rem;
-  background-color: #AC9FBB;
+  background-color: rgba(33, 46, 63, 0.7);
   padding: 1rem;
-  border: 0.2em inset #313E50;
+  border: 0.2em inset #212E3F;
+}
+
+.imgBtn {
+  background: #a8bacf;
+  background-image: -webkit-linear-gradient(top, #a8bacf, #5D6773);
+  background-image: -moz-linear-gradient(top, #a8bacf, #5D6773);
+  background-image: -ms-linear-gradient(top, #a8bacf, #5D6773);
+  background-image: -o-linear-gradient(top, #a8bacf, #5D6773);
+  background-image: linear-gradient(to bottom, #a8bacf, #5D6773);
+  -webkit-border-radius: 24;
+  -moz-border-radius: 24;
+  border-radius: 24px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 4px 12px 4px 12px;
+  border: solid #2B1A18 1px;
+  text-decoration: none;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.imgBtn:hover {
+  background: #717a85;
+  text-decoration: none;
+}
+
+#contact {
+  margin-top: 4rem;
 }

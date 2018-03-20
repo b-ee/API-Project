@@ -12,7 +12,7 @@ function getRandomImage(slot) {
   slot.src = '';
   fetch(`https://source.unsplash.com/random?sig=${Math.random()*1000}`)
   .then(function(image) {
-    if (!image.ok){ 
+    if (!image.ok){
       return new Error(image); 
     } 
     return image.blob(); 
