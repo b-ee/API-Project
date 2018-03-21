@@ -1,11 +1,11 @@
+const submitBtn = document.getElementById("submitBtn");
+let emailForm = document.getElementById("emailForm");
+submitBtn.onclick = addressSwitch;
+
 function addressSwitch() {
   const email = document.getElementById("email");
-  const notes = document.getElementById("notes");
-  const newForm = document.getElementById("newForm");
 
-  newForm.action = `https://formspree.io/${email}`;
+  emailForm.action = `https://formspree.io/${email.value}`;
 
-  newForm.appendChild(notes);
-
-  newForm.submit();
+  emailForm.submit();
 }
